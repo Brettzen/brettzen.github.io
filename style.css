@@ -164,11 +164,11 @@ main {
 .page-wrapper {
   background-color: #00b9b9; }
   .page-wrapper .intro, .page-wrapper .explanation, .page-wrapper .participation, .page-wrapper .benefits, .page-wrapper .requirements {
-    border-image: url("assets/parchment.png");
+    border-image: url("assets/paper-68832_1280.svg");
     border-image-slice: 0 fill; }
 
 aside div div {
-  border-image: url("assets/parchment.png");
+  border-image: url("assets/paper-68832_1280.svg");
   border-image-slice: 0 fill; }
 
 /* -------------------------------- 

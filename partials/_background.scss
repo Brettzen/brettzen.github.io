@@ -9,7 +9,8 @@ main {
 
 	.intro, .explanation, .participation, .benefits, .requirements {
 		// background-color: $color-2
-		border-image: url("assets/parchment.png");
+		border-image: url("assets/paper-68832_1280.svg");
+		// border-image: url("assets/parchment.png");
 		border-image-slice: 0 fill;
 	}
 }
@@ -18,7 +19,8 @@ aside {
 	// background: $color-1;
 
 	div div {
-		border-image: url("assets/parchment.png");
+		border-image: url("assets/paper-68832_1280.svg");
+		// border-image: url("assets/parchment.png");
 		border-image-slice: 0 fill;
 	}
 }
