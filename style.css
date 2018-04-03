@@ -108,23 +108,26 @@
 
 .intro, .main {
   z-index: 2;
-  padding: 20px 0;
+  padding: 20px;
   box-sizing: border-box; }
+
+.main {
+  padding: 20px 0; }
 
 .explanation, .participation {
   padding: 20px;
   margin-bottom: 20px; }
 
 .requirements {
-  padding: 20px 20px 80px;
+  padding: 20px 20px 120px;
   margin-bottom: 20px; }
 
 .benefits {
-  padding: 20px 20px 180px;
+  padding: 20px 20px 120px;
   margin-bottom: 20px; }
 
 footer {
-  margin: -100px 0 0;
+  margin: -120px 0 60px;
   text-align: right; }
   footer .zen-validate-html::before {
     content: "~"; }
@@ -137,8 +140,6 @@ aside {
     padding: 1em;
     padding: 55px 55px 75px;
     box-sizing: border-box; }
-  aside .design-selection {
-    margin-top: 0; }
   @media only screen and (min-width: 640px) {
     aside .design-archives {
       width: 50%;
@@ -151,7 +152,7 @@ ul {
   list-style: none; }
 
 footer {
-  padding: 2em; }
+  padding: 0 5em 0 0; }
 
 /* -------------------------------- 
 
@@ -166,11 +167,11 @@ main {
 .page-wrapper {
   background-color: #00b9b9; }
   .page-wrapper .intro, .page-wrapper .explanation, .page-wrapper .participation, .page-wrapper .benefits, .page-wrapper .requirements {
-    border-image: url("assets/paper-68832_1280.svg");
+    border-image: url("assets/parchment.png");
     border-image-slice: 0 fill; }
 
 aside div div {
-  border-image: url("assets/paper-68832_1280.svg");
+  border-image: url("assets/parchment.png");
   border-image-slice: 0 fill; }
 
 /* -------------------------------- 
@@ -201,7 +202,7 @@ h1, h2, h3 {
   color: #600; }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 1.2;
   margin: 0 0 .4em; }
@@ -250,6 +251,13 @@ a {
   font-family: "Berkshire Swash", sans-serif;
   color: #600;
   text-decoration: underline; }
+
+@media only screen and (min-width: 1080px) {
+  .page-wrapper aside div h3 {
+    font-size: 1.25rem; } }
+@media only screen and (min-width: 1600px) {
+  .page-wrapper aside div h3 {
+    font-size: 1.5rem; } }
 
 /* -------------------------------- 
 

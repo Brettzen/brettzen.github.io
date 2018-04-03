@@ -85,8 +85,12 @@ $L:     1600px;
 
 .intro, .main {
   z-index: 2;
-  padding: 20px 0;
+  padding: 20px;
   box-sizing: border-box;
+}
+
+.main {
+  padding: 20px 0;
 }
 
 .explanation, .participation {
@@ -95,17 +99,17 @@ $L:     1600px;
 }
 
 .requirements {
-  padding: 20px 20px 80px;
+  padding: 20px 20px 120px;
   margin-bottom: 20px;
 }
 
 .benefits {
-  padding: 20px 20px 180px;
+  padding: 20px 20px 120px;
   margin-bottom: 20px;
 }
 
 footer {
-  margin: -100px 0 0;
+  margin: -120px 0 60px;
   text-align: right;
 
   .zen-validate-html::before {
@@ -122,10 +126,6 @@ aside {
     padding: 1em;
     padding: 55px 55px 75px;
     box-sizing: border-box;
-  }
-
-  .design-selection {
-    margin-top: 0;
   }
 
   @include MQ(XS) {
@@ -146,5 +146,5 @@ ul {
   }
 
   footer {
-    padding: 2em;
+    padding: 0 5em 0 0;
   }
