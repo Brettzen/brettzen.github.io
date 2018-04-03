@@ -108,17 +108,20 @@
 
 .intro, .main {
   z-index: 2;
-  padding: 20px;
+  padding: 20px 0;
   box-sizing: border-box; }
 
 .explanation, .participation {
-  padding: 20px; }
+  padding: 20px;
+  margin-bottom: 20px; }
 
 .requirements {
-  padding: 20px 20px 80px; }
+  padding: 20px 20px 80px;
+  margin-bottom: 20px; }
 
 .benefits {
-  padding: 20px 20px 180px; }
+  padding: 20px 20px 180px;
+  margin-bottom: 20px; }
 
 footer {
   margin: -100px 0 0;
@@ -127,11 +130,10 @@ footer {
     content: "~"; }
 
 aside {
-  padding-top: 4rem;
   z-index: 2;
   width: 100%; }
   aside div div {
-    margin-top: 4em;
+    margin-top: 20px;
     padding: 1em;
     padding: 55px 55px 75px;
     box-sizing: border-box; }
