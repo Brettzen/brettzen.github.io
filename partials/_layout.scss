@@ -1,0 +1,108 @@
+// breakpoints
+   
+$S:     768px;   
+$M:     1080px;     
+$L:     1600px;   
+
+// media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $S) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $L) { @content; } 
+  } 
+  @else {
+    @media only screen and (min-width: $canvas) { @content; }
+  }
+}
+
+// super light grid - it works with the .cd-container class inside style.scss
+
+@mixin column($percentage, $float-direction:left) {
+  width: 100% * $percentage;
+  float: $float-direction;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 4em auto;
+
+  @include MQ(M) {
+
+    .intro, .main {
+      width: 75%;
+    }
+
+    .intro {
+      order: 1;
+    }
+    
+    .main {
+      order: 3;
+    }
+
+    aside {
+      order: 2;
+      padding-top: 0;
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+
+      div {
+        // background-color: $color-2;
+        width: 95%;
+        margin: 0 auto 30px;
+
+        div {
+          background-color: $color-2;
+          padding: 1em 1em 1em 0;
+        }
+
+        h3 {
+          margin-top: 0;
+        }
+      }
+
+      .design-selection {
+
+      }
+
+    }
+
+
+  }
+}
+
+.intro, .main {
+  z-index: 2;
+}
+
+aside {
+  padding-top: 4rem;
+  z-index: 2;
+
+  div div {
+    margin-top: 4em;
+    padding: 1em;
+  }
+
+  .design-selection {
+    margin-top: 0;
+  }
+
+}
+
+ul {
+    list-style: none;
+  }
+
+  footer {
+    padding: 2em;
+  }

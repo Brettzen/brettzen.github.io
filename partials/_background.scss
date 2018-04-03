@@ -1,0 +1,22 @@
+body,
+main {
+	/* this is the page background */
+	background-color: $color-1;
+}
+
+.page-wrapper {
+	background-color: $color-1;
+
+	.main, .intro {
+		background-color: $color-2
+	}
+}
+
+aside {
+	background: $color-1;
+
+	div div {
+		background: $color-2;
+	}
+}
+

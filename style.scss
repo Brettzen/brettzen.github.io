@@ -1,0 +1,63 @@
+	
+@import 'partials/prefix-mixins';
+
+$color-1: #00b9b9; // sea green
+$color-2: #d6d694; // light tan
+$color-3: #000; // black
+$color-4: #600; // dark red - links and headings
+$color-5: #ffffff; // white
+
+// additional colors
+
+$success: #6fce72; // green
+$alert: #ce6f72;  // red
+
+// fonts
+@font-face {
+	font-family: "Pieces of Eight";
+	src: url("assets/pieces-of-eight.ttf");
+}
+@font-face {
+	font-family: "Berkshire Swash";
+	src: url("assets/berkshireswash-regular.ttf");
+}
+$primary-font: "Pieces of Eight", serif;
+$secondary-font: "Berkshire Swash", sans-serif;
+
+@import 'partials/grid';
+@import 'partials/layout'; // responsive grid and media queries
+
+// color palette - these colors will be the color swatches of the Colors section
+
+
+
+/* -------------------------------- 
+
+xBackground 
+
+-------------------------------- */
+
+@import 'partials/background';
+
+/* -------------------------------- 
+
+xPage title 
+
+-------------------------------- */
+
+@import 'partials/title';
+
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+
+@import 'partials/typography';
+/* -------------------------------- 
+
+xNavigation 
+
+-------------------------------- */
+
+@import 'partials/navigation';

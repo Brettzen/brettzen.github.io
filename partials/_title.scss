@@ -1,0 +1,23 @@
+header {
+  text-align: center;
+
+  h1 {
+  	margin-bottom: 0;
+
+	&::before {
+		content: "$";
+		padding-right: 1em;
+	}
+
+	&::after {
+		content: "$";
+		padding-left: 1em;
+
+	}
+  }
+
+  h2 {
+  	margin-top: 1em;
+  }
+
+}

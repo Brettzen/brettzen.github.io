@@ -1,0 +1,276 @@
+@font-face {
+  font-family: "Pieces of Eight";
+  src: url("assets/pieces-of-eight.ttf"); }
+@font-face {
+  font-family: "Berkshire Swash";
+  src: url("assets/berkshireswash-regular.ttf"); }
+.col-1 {
+  flex: 0 0 8.3333333333%; }
+
+.offset-1 {
+  margin-left: 8.3333333333%; }
+
+.col-2 {
+  flex: 0 0 16.6666666667%; }
+
+.offset-2 {
+  margin-left: 16.6666666667%; }
+
+.col-3 {
+  flex: 0 0 25%; }
+
+.offset-3 {
+  margin-left: 25%; }
+
+.col-4 {
+  flex: 0 0 33.3333333333%; }
+
+.offset-4 {
+  margin-left: 33.3333333333%; }
+
+.col-5 {
+  flex: 0 0 41.6666666667%; }
+
+.offset-5 {
+  margin-left: 41.6666666667%; }
+
+.col-6 {
+  flex: 0 0 50%; }
+
+.offset-6 {
+  margin-left: 50%; }
+
+.col-7 {
+  flex: 0 0 58.3333333333%; }
+
+.offset-7 {
+  margin-left: 58.3333333333%; }
+
+.col-8 {
+  flex: 0 0 66.6666666667%; }
+
+.offset-8 {
+  margin-left: 66.6666666667%; }
+
+.col-9 {
+  flex: 0 0 75%; }
+
+.offset-9 {
+  margin-left: 75%; }
+
+.col-10 {
+  flex: 0 0 83.3333333333%; }
+
+.offset-10 {
+  margin-left: 83.3333333333%; }
+
+.col-11 {
+  flex: 0 0 91.6666666667%; }
+
+.offset-11 {
+  margin-left: 91.6666666667%; }
+
+.col-12 {
+  flex: 0 0 100%; }
+
+.offset-12 {
+  margin-left: 100%; }
+
+.page-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 4em auto; }
+  @media only screen and (min-width: 1080px) {
+    .page-wrapper .intro, .page-wrapper .main {
+      width: 75%; }
+    .page-wrapper .intro {
+      order: 1; }
+    .page-wrapper .main {
+      order: 3; }
+    .page-wrapper aside {
+      order: 2;
+      padding-top: 0;
+      display: flex;
+      flex-direction: column;
+      width: 25%; }
+      .page-wrapper aside div {
+        width: 95%;
+        margin: 0 auto 30px; }
+        .page-wrapper aside div div {
+          background-color: #d6d694;
+          padding: 1em 1em 1em 0; }
+        .page-wrapper aside div h3 {
+          margin-top: 0; } }
+
+.intro, .main {
+  z-index: 2; }
+
+aside {
+  padding-top: 4rem;
+  z-index: 2; }
+  aside div div {
+    margin-top: 4em;
+    padding: 1em; }
+  aside .design-selection {
+    margin-top: 0; }
+
+ul {
+  list-style: none; }
+
+footer {
+  padding: 2em; }
+
+/* -------------------------------- 
+
+xBackground 
+
+-------------------------------- */
+body,
+main {
+  /* this is the page background */
+  background-color: #00b9b9; }
+
+.page-wrapper {
+  background-color: #00b9b9; }
+  .page-wrapper .main, .page-wrapper .intro {
+    background-color: #d6d694; }
+
+aside {
+  background: #00b9b9; }
+  aside div div {
+    background: #d6d694; }
+
+/* -------------------------------- 
+
+xPage title 
+
+-------------------------------- */
+header {
+  text-align: center; }
+  header h1 {
+    margin-bottom: 0; }
+    header h1::before {
+      content: "$";
+      padding-right: 1em; }
+    header h1::after {
+      content: "$";
+      padding-left: 1em; }
+  header h2 {
+    margin-top: 1em; }
+
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+h1, h2, h3 {
+  font-family: "Pieces of Eight", serif;
+  color: #600; }
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 .4em; }
+  @media only screen and (min-width: 768px) {
+    h1 {
+      font-size: 3.2rem; } }
+  @media only screen and (min-width: 1080px) {
+    h1 {
+      font-size: 4rem; } }
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1em 0; }
+  @media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
+      margin: 1em 0 1.4em; } }
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-indent: 1em;
+  margin-bottom: 0; }
+  h3 + p {
+    margin-top: .5em; }
+
+section > h2::before {
+  /* number before each section title */
+  color: #1a0000; }
+
+p {
+  font-family: "Berkshire Swash", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  text-indent: 1em;
+  margin: 1.5em .5em;
+  color: #404040; }
+  @media only screen and (min-width: 768px) {
+    p {
+      font-size: 1.6rem;
+      line-height: 1.6; } }
+
+a {
+  font-family: "Berkshire Swash", sans-serif;
+  color: #600;
+  text-decoration: underline; }
+
+/* -------------------------------- 
+
+xNavigation 
+
+-------------------------------- */
+.page-wrapper::before {
+  background-image: url("assets/pirate-ship.svg");
+  background-repeat: no-repeat;
+  content: "";
+  max-width: 160px;
+  padding: 300px 150px 0;
+  position: relative;
+  animation: float 5s infinite ease;
+  margin: 0 auto -30px; }
+  @media only screen and (min-width: 768px) {
+    .page-wrapper::before {
+      padding: 300px 22% 0;
+      transform-origin: 22% center;
+      animation: sail 15s infinite ease;
+      margin: 0 0 -30px;
+      z-index: 0; } }
+
+@keyframes float {
+  0% {
+    transform: rotate(-2deg); }
+  50% {
+    transform: rotate(3deg); }
+  100% {
+    transform: rotate(-2deg); } }
+@keyframes sail {
+  0% {
+    left: 0;
+    transform: rotate(-2deg); }
+  12.5% {
+    transform: rotate(3deg); }
+  25% {
+    transform: rotate(-2deg); }
+  37.5% {
+    transform: rotate(3deg); }
+  50% {
+    left: 75%;
+    transform: rotate(-2deg) rotateY(180deg); }
+  62.5% {
+    transform: rotate(3deg) rotateY(180deg); }
+  75% {
+    transform: rotate(-2deg) rotateY(180deg); }
+  87.5% {
+    transform: rotate(3deg) rotateY(180deg); }
+  100% {
+    left: 0;
+    transform: rotate(-2deg); } }
+html, body {
+  overflow: auto; }
+
+/*# sourceMappingURL=style.css.map */

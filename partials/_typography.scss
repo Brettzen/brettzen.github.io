@@ -1,0 +1,67 @@
+h1, h2, h3 {
+	font-family: $primary-font;
+	color: $color-4;
+}
+
+h1 {
+	font-size: 2.4rem;
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 0 0 .4em;
+
+	@include MQ(S) {
+		font-size: 3.2rem;
+	}
+
+	@include MQ(M) {
+		font-size: 4rem;
+	}
+}
+
+h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 1em 0;
+
+	@include MQ(S) {
+		font-size: 1.8rem;
+		margin: 1em 0 1.4em;
+	}
+}
+
+h3 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-indent: 1em;
+	margin-bottom: 0;
+
+	& + p {
+		margin-top: .5em;
+	}
+}
+
+section > h2::before {
+	/* number before each section title */
+	color: darken($color-4, 15%);
+}
+
+p {
+	font-family: $secondary-font;
+	font-size: 1.4rem;
+	line-height: 1.4;
+	text-indent: 1em;
+	margin: 1.5em .5em;
+	color: lighten($color-3, 25%);
+
+	@include MQ(S) {
+		font-size: 1.6rem;
+		line-height: 1.6;
+	}
+}
+
+a {
+	font-family: $secondary-font;
+	color: $color-4;
+	text-decoration: underline;
+}
