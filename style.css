@@ -76,6 +76,9 @@
 .offset-12 {
   margin-left: 100%; }
 
+#css-zen-garden {
+  margin: 0; }
+
 .page-wrapper {
   display: flex;
   flex-wrap: wrap;
