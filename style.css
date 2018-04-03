@@ -98,22 +98,49 @@
         width: 95%;
         margin: 0 auto 30px; }
         .page-wrapper aside div div {
-          background-color: #d6d694;
-          padding: 1em 1em 1em 0; }
+          padding: 1em 1em 1em 0;
+          float: none; }
         .page-wrapper aside div h3 {
           margin-top: 0; } }
 
 .intro, .main {
-  z-index: 2; }
+  z-index: 2;
+  padding: 20px;
+  box-sizing: border-box; }
+
+.explanation, .participation {
+  padding: 20px; }
+
+.requirements {
+  padding: 20px 20px 80px; }
+
+.benefits {
+  padding: 55px 55px 75px; }
+
+footer {
+  margin: -100px 0 0;
+  text-align: right; }
+  footer .zen-validate-html::before {
+    content: "~"; }
 
 aside {
   padding-top: 4rem;
-  z-index: 2; }
+  z-index: 2;
+  width: 100%; }
   aside div div {
     margin-top: 4em;
-    padding: 1em; }
+    padding: 1em;
+    padding: 55px 55px 75px;
+    box-sizing: border-box; }
   aside .design-selection {
     margin-top: 0; }
+  @media only screen and (min-width: 640px) {
+    aside .design-archives {
+      width: 50%;
+      float: left; }
+    aside .zen-resources {
+      width: 50%;
+      float: right; } }
 
 ul {
   list-style: none; }
@@ -133,13 +160,13 @@ main {
 
 .page-wrapper {
   background-color: #00b9b9; }
-  .page-wrapper .main, .page-wrapper .intro {
-    background-color: #d6d694; }
+  .page-wrapper .intro, .page-wrapper .explanation, .page-wrapper .participation, .page-wrapper .benefits, .page-wrapper .requirements {
+    border-image: url("assets/parchment.png");
+    border-image-slice: 0 fill; }
 
-aside {
-  background: #00b9b9; }
-  aside div div {
-    background: #d6d694; }
+aside div div {
+  border-image: url("assets/parchment.png");
+  border-image-slice: 0 fill; }
 
 /* -------------------------------- 
 
@@ -221,7 +248,7 @@ a {
 
 /* -------------------------------- 
 
-xNavigation 
+xSVG-Animation 
 
 -------------------------------- */
 .page-wrapper::before {
@@ -232,13 +259,13 @@ xNavigation
   padding: 300px 150px 0;
   position: relative;
   animation: float 5s infinite ease;
-  margin: 0 auto -30px; }
+  margin: 0 auto -40px; }
   @media only screen and (min-width: 768px) {
     .page-wrapper::before {
       padding: 300px 22% 0;
       transform-origin: 22% center;
       animation: sail 15s infinite ease;
-      margin: 0 0 -30px;
+      margin: 0 0 -40px;
       z-index: 0; } }
 
 @keyframes float {

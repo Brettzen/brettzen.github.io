@@ -7,16 +7,19 @@ main {
 .page-wrapper {
 	background-color: $color-1;
 
-	.main, .intro {
-		background-color: $color-2
+	.intro, .explanation, .participation, .benefits, .requirements {
+		// background-color: $color-2
+		border-image: url("assets/parchment.png");
+		border-image-slice: 0 fill;
 	}
 }
 
 aside {
-	background: $color-1;
+	// background: $color-1;
 
 	div div {
-		background: $color-2;
+		border-image: url("assets/parchment.png");
+		border-image-slice: 0 fill;
 	}
 }
 

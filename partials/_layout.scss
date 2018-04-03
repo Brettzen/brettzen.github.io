@@ -1,5 +1,6 @@
 // breakpoints
-   
+
+$XS:    640px;  
 $S:     768px;   
 $M:     1080px;     
 $L:     1600px;   
@@ -7,7 +8,10 @@ $L:     1600px;
 // media queries
 
 @mixin MQ($canvas) {
-  @if $canvas == S {
+  @if $canvas == XS {
+   @media only screen and (min-width: $XS) { @content; } 
+  }
+  @else if $canvas == S {
    @media only screen and (min-width: $S) { @content; } 
   }
   @else if $canvas == M {
@@ -56,22 +60,17 @@ $L:     1600px;
       width: 25%;
 
       div {
-        // background-color: $color-2;
         width: 95%;
         margin: 0 auto 30px;
 
         div {
-          background-color: $color-2;
           padding: 1em 1em 1em 0;
+          float: none;
         }
 
         h3 {
           margin-top: 0;
         }
-      }
-
-      .design-selection {
-
       }
 
     }
@@ -82,21 +81,58 @@ $L:     1600px;
 
 .intro, .main {
   z-index: 2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.explanation, .participation {
+  padding: 20px;
+}
+
+.requirements {
+  padding: 20px 20px 80px;
+}
+
+.benefits {
+  padding: 55px 55px 75px;
+}
+
+footer {
+  margin: -100px 0 0;
+  text-align: right;
+
+  .zen-validate-html::before {
+    content:"~";
+  }
 }
 
 aside {
   padding-top: 4rem;
   z-index: 2;
+  width: 100%;
 
   div div {
     margin-top: 4em;
     padding: 1em;
+    padding: 55px 55px 75px;
+    box-sizing: border-box;
   }
 
   .design-selection {
     margin-top: 0;
   }
 
+  @include MQ(XS) {
+    .design-archives {
+      width: 50%;
+      float: left;
+    }
+    .zen-resources {
+      width: 50%;
+      float: right;
+    }
+  }
+    
 }
 
 ul {
