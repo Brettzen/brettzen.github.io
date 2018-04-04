@@ -5,7 +5,8 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: 7.2vw;
+	padding-top: 20px;
 	font-weight: 300;
 	line-height: 1.2;
 	margin: 0 0 .4em;
@@ -23,6 +24,7 @@ h2 {
 	font-weight: bold;
 	text-transform: uppercase;
 	margin: 1em 0;
+	font-size: 1.6rem;
 
 	@include MQ(S) {
 		font-size: 2.25rem;
@@ -31,7 +33,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.75rem;
+	font-size: 1.6rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-indent: 1em;
@@ -54,10 +56,9 @@ p {
 	text-indent: 1em;
 	margin: 1.5em .5em;
 	color: lighten($color-3, 25%);
-	text-align: center;
 
 	@include MQ(S) {
-		font-size: 1.6rem;
+		font-size: 1.4rem;
 		line-height: 1.6;
 	}
 }

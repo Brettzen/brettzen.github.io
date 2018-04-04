@@ -203,7 +203,8 @@ h1, h2, h3 {
   text-align: center; }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 7.2vw;
+  padding-top: 20px;
   font-weight: 300;
   line-height: 1.2;
   margin: 0 0 .4em; }
@@ -217,14 +218,15 @@ h1 {
 h2 {
   font-weight: bold;
   text-transform: uppercase;
-  margin: 1em 0; }
+  margin: 1em 0;
+  font-size: 1.6rem; }
   @media only screen and (min-width: 768px) {
     h2 {
       font-size: 2.25rem;
       margin: 1em 0 1.4em; } }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   font-weight: bold;
   text-transform: uppercase;
   text-indent: 1em;
@@ -242,11 +244,10 @@ p {
   line-height: 1.4;
   text-indent: 1em;
   margin: 1.5em .5em;
-  color: #404040;
-  text-align: center; }
+  color: #404040; }
   @media only screen and (min-width: 768px) {
     p {
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       line-height: 1.6; } }
 
 a {
