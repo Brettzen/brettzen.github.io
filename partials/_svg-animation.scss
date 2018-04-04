@@ -8,12 +8,12 @@
 		padding: 300px 150px 0;
 		position: relative;
 		animation: float 5s infinite ease;
-		margin: 0 auto -40px;
+		margin: 0 auto -45px;
 		@include MQ(S) {
 			padding: 300px 22% 0;
 			transform-origin: 22% center;
 			animation: sail 15s infinite ease;
-			margin: 0 0 -40px;
+			margin: 0 0 -43px;
 			z-index: 0;
 		}
 	}
